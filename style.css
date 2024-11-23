@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    position: absolute;
+    width: 690px;
+    background: rgba(89, 131, 83, 0.09);
+    backdrop-filter: blur( 3px );
+    border-radius: 12px;
+    padding: 30px;
+    border: 3px solid aquamarine;
+    transform: translate(-50%), -50%;
+    transition: 0.3s all ease;
+
+}
+.container:hover{
+    transform: translateY(-10px);
+}
+.container h1{
+    color: #fff;
+}
+.content{
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px dashed #bbb;
+}
+
+.content .text-input
+{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+}
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+    color: aliceblue;
+
+}
+
+.text-input .to-text{
+    border-left: 1px solid #bbb;
+    border-radius: 0px;
+}
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+.controls , li , .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls .row.from .icons{
+    padding-right:15px ;
+    border-right: 1px solid #bbb;
+}
+.controls .row.to .icons{
+    padding-right:15px ;
+    border-right: 1px solid #bbb;
+}
+.controls .icons {
+    width: 38%;
+}
+.controls .icons i{
+    width: 60px;
+    color: #fc4091;
+    font-size: 18px;
+    cursor: pointer;
+    justify-content: center;
+
+}
+.controls .row select{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: aqua;
+    background: black;
+
+}
+.controls .exchange{
+color: #9f9f9f;
+cursor: pointer;
+font-size: 16px;
+}
+.container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: aquamarine;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: cursive;
+    border-radius: 30px;
+    transition: 0.3s all ease;
+    
+}
+button:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 0 25px rgba(255, 252, 252, 0.5);
+}
+
+.area{
+    background: #050505;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display: center;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+.credit{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: cursive;
+    color: #fff;
+}

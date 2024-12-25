@@ -1,4 +1,7 @@
 # Language-Transl;ator.github.io
+
+Disclaimer: Made with the help of Tutorials and i changed the user interface and add some my own features.
+
  A Dynamic and user-friendly web-based language translation tool with text to speech functionality , language wipe and text copy features and supported all language Transalation.  This project was built using HTML, CSS and JavaScript and Api.
 
  Features:
